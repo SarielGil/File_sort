@@ -134,7 +134,7 @@ def is_folder_empty(dest):
 
 if __name__ == '__main__':
     now = str(datetime.today()).split(" ")[0]
-    path = r"C:\Users\Beyond\PycharmProjects\file_loader\UPS_IL\Unstructured" #'../data/moc_folder'
-    destination_folder = r"C:\Users\Beyond\PycharmProjects\file_loader\UPS_IL\Unstructured"+now#'../data/moved'
+    path = r"path\to\origin\folder"
+    destination_folder = r"path\to\destination\folder"+now
     is_folder_empty(destination_folder)
     move_files(path, destination_folder, file_type='*', keep_duplicates = False)
